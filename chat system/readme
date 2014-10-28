@@ -1,5 +1,15 @@
 by Xiao Li
 
+coordinator communicates with client using UDP socket, if client wants to start a chat session, coordinator create a TCP connection with client for the chat session.
+client could start a session by command 'START s_name', or join a chat session by command 'JOIN s_name'.
+Sometimes a client failed to automatically join the session he just created, so he has to JOIN it again.
+Command like:
+
+START newse
+JOIN newse
+
+then, clients could send message to other users in this session, or use GET ONE, GET ALL command to receive message.
+
 Use 'make' to compile my program, and 'make clean' to delete all the executable files. Using 'make' will create 3 executable file: coordinator, session_server and client.
 run ./coordinator to start the server, run ./client to start the client.
 
