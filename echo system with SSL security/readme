@@ -1,0 +1,11 @@
+by Xiao Li
+This is a simplified version of chat system but with SSL security.
+
+
+
+Use 'make' to compile my program, and 'make clean' to delete all the executable files. Using 'make' will create 2 executable file: echoServer and echoClient.
+run ./echoServer to start the server, run ./echoClient to start the client.
+
+echoClient and echoServer will print ssl and socket information in each terminal.
+
+Type something in echoClient and press "ENTER", we could see that the echoServer echoes the information back.
